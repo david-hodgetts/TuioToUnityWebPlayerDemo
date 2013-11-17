@@ -1,6 +1,6 @@
 # Unity webplayer tuio integration demo
 
-this demo illustrates passing tuio messages to unity's webplayer.
+This demo illustrates passing tuio messages to unity's webplayer.
 The tuio messages are be handled by [touchscript](https://github.com/InteractiveLab/TouchScript) on Unity's side.
 
 This works by proxying the tuio messages over websockets. We use a node server and [Tuio.js](https://github.com/fe9lix/Tuio.js) to accomplish this. This gets the Tuio messages on the browser's javascript engine. We then forward those messages to the player via Unity's SendMessage interface.
@@ -21,13 +21,18 @@ run the following command from the root of the project
 
 			node server.js
 
-## note
-
-- this example uses Express.js to serve the static content. This dependency could easily be removed
-
-- the unity project can be found here.
+browse to http://localhost:5040/
 
 
-## licence
+## Notes
+
+- server.js uses Express.js to serve the static content. This dependency could easily be removed.
+
+- The unity project can be found [here](https://github.com/david-demainlalune/TuioUnityWebPlayerDemo).
+
+- This is a weekend project. Use with caution : )
+
+
+## Licence
 
 MIT, read, hack, improve
