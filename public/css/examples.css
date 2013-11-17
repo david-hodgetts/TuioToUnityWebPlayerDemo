@@ -1,0 +1,13 @@
+body {
+	background: #000;
+	margin: 0;
+}
+
+.tuioCursor {
+	background: #fff;
+	height: 45px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 45px;
+}
