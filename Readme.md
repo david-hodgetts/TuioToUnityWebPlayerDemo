@@ -28,7 +28,7 @@ browse to http://localhost:5040/
 
 - server.js uses Express.js to serve the static content. This dependency could easily be removed.
 
-- The unity project can be found [here](https://github.com/david-demainlalune/TuioUnityWebPlayerDemo).
+- The unity project can be found [here](https://github.com/david-demainlalune/TuioUnityWebPlayertInputProvider).
 
 - This is a weekend project. Use with caution : )
 
