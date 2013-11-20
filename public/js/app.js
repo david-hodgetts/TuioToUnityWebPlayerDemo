@@ -32,46 +32,23 @@ var setupSocket = function(unity){
     onAddTuioCursor = function(addCursor) {
         var simplifiedCursor = simplifyCursor(addCursor);
         unity.SendMessage("TouchScript", "OnCursorAdded", JSON.stringify(simplifiedCursor));
-        console.log(simplifiedCursor.id);
     },
 
     onUpdateTuioCursor = function(updateCursor) {
-       
         var simplifiedCursor = simplifyCursor(updateCursor);
-
         unity.SendMessage("TouchScript", "OnCursorUpdated", JSON.stringify(simplifiedCursor));
     },
 
     onRemoveTuioCursor = function(removeCursor) {
-
         var simplifiedCursor = simplifyCursor(removeCursor);
-
         u.getUnity().SendMessage("TouchScript", "OnCursorRemoved", JSON.stringify(simplifiedCursor));
-    },
-
-    onAddTuioObject = function(addObject) {
-        console.log(addObject);
-    },
-
-    onUpdateTuioObject = function(updateObject) {
-        console.log(updateObject);
-    },
-
-    onRemoveTuioObject = function(removeObject) {
-        console.log(removeObject);
-    },
-
-    onRefresh = function(time) {
     };
 
     client.on("connect", onConnect);
     client.on("addTuioCursor", onAddTuioCursor);
     client.on("updateTuioCursor", onUpdateTuioCursor);
     client.on("removeTuioCursor", onRemoveTuioCursor);
-    client.on("addTuioObject", onAddTuioObject);
-    client.on("updateTuioObject", onUpdateTuioObject);
-    client.on("removeTuioObject", onRemoveTuioObject);
-    client.on("refresh", onRefresh);
+ 
     client.connect();    
 };
 
